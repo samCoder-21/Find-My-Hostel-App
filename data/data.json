@@ -1,0 +1,401 @@
+[
+ {
+   "id": 1,
+   "name": "Sunrise Hostel",
+   "type": "Hostel",
+   "city": "Rajkot",
+   "address": "Near University Road, Rajkot, Gujarat",
+   "rating": 4.5,
+   "reviews": [
+     { "user": "Amit Patel", "comment": "Great place to stay, very clean and secure.", "rating": 5 },
+     { "user": "Ravi Joshi", "comment": "Affordable and close to my college.", "rating": 4 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel1.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel2.jpg",
+     "../featuresimage/hotelsImage/hostel3.jpg"
+   ],
+   "price_per_month": 5000,
+   "gender": "Both",
+   "facilities": ["Wi-Fi", "Laundry", "Mess Facility", "Parking", "24/7 Security"],
+   "description": "A well-maintained hostel near University Road with modern facilities and a friendly environment."
+ },
+ {
+   "id": 2,
+   "name": "Greenwood PG",
+   "type": "PG",
+   "city": "Rajkot",
+   "address": "Kalawad Road, Rajkot, Gujarat",
+   "rating": 4.3,
+   "reviews": [
+     { "user": "Neha Shah", "comment": "Perfect for working professionals.", "rating": 4 },
+     { "user": "Divya Mehta", "comment": "Comfortable and safe environment.", "rating": 4.5 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel4.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel5.jpg",
+     "../featuresimage/hotelsImage/hostel6.jpg"
+   ],
+   "price_per_month": 6000,
+   "gender": "Both",
+   "facilities": ["Air Conditioning", "Wi-Fi", "Housekeeping", "TV Lounge"],
+   "description": "A premium PG offering private rooms with top-notch facilities for comfort and convenience."
+ },
+ {
+   "id": 3,
+   "name": "Blue Horizon Hostel",
+   "type": "Hostel",
+   "city": "Ahmedabad",
+   "address": "Dumas Road, Ahmedabad, Gujarat",
+   "rating": 4.7,
+   "reviews": [
+     { "user": "Aniket Roy", "comment": "Amazing gym and mess facilities.", "rating": 5 },
+     { "user": "Riya Singh", "comment": "Feels like home away from home.", "rating": 4.8 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel7.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel8.jpg",
+     "../featuresimage/hotelsImage/hostel9.jpg"
+   ],
+   "price_per_month": 6500,
+   "gender": "Both",
+   "facilities": ["Wi-Fi", "Gym", "Study Room", "Mess Facility", "Laundry"],
+   "description": "A student-friendly hostel with excellent amenities and a focus on a healthy lifestyle."
+ },
+ {
+   "id": 4,
+   "name": "Urban Nest PG",
+   "type": "PG",
+   "city": "Ahmedabad",
+   "address": "Near Alkapuri, Ahmedabad, Gujarat",
+   "rating": 4.1,
+   "reviews": [
+     { "user": "Pooja Sharma", "comment": "The shared kitchen is a bonus!", "rating": 4 },
+     { "user": "Neha Desai", "comment": "Good security and clean rooms.", "rating": 4.2 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel10.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel11.jpg",
+     "../featuresimage/hotelsImage/hostel12.jpg"
+   ],
+   "price_per_month": 5000,
+   "gender": "Girls",
+   "facilities": ["Shared Kitchen", "Wi-Fi", "Recreation Room", "24/7 Security"],
+   "description": "A cozy PG for students and professionals, offering modern amenities at an affordable price."
+ },
+ {
+   "id": 5,
+   "name": "Elite Living PG",
+   "type": "PG",
+   "city": "Surat",
+   "address": "Ring Road, Surat, Gujarat",
+   "rating": 4.4,
+   "reviews": [
+     { "user": "Manoj Trivedi", "comment": "Very well maintained and peaceful.", "rating": 4.5 },
+     { "user": "Sneha Gupta", "comment": "Great value for money.", "rating": 4.3 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel13.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel14.jpg",
+     "../featuresimage/hotelsImage/hostel15.jpg"
+   ],
+   "price_per_month": 7000,
+   "gender": "Both",
+   "facilities": ["Air Conditioning", "Wi-Fi", "Mess Facility", "Parking"],
+   "description": "A luxurious PG designed for comfort and convenience with premium facilities."
+ },
+ {
+   "id": 6,
+   "name": "Skyline Boys Hostel",
+   "type": "Hostel",
+   "city": "Vadodara",
+   "address": "Satellite, Vadodara, Gujarat",
+   "rating": 4.6,
+   "reviews": [
+     { "user": "Rohan Malhotra", "comment": "Spacious and comfortable rooms.", "rating": 4.7 },
+     { "user": "Siddharth Mehta", "comment": "Affordable and well-maintained.", "rating": 4.6 }
+   ],
+   "main_image": "../featuresimage/hotelsImage/hostel8.jpg",
+   "room_images": [
+     "../featuresimage/hotelsImage/hostel19.jpg",
+     "../featuresimage/hotelsImage/hostel20.jpg"
+   ],
+   "price_per_month": 5200,
+   "gender": "Boys",
+   "facilities": ["Laundry", "Mess Facility", "Parking", "Study Desk"],
+   "description": "A highly-rated hostel for students, providing a productive and secure living environment."
+ },
+ {
+  "id": 7,
+  "name": "Amber Residence",
+  "type": "Hostel",
+  "city": "Rajkot",
+  "address": "Jamnagar Road, Rajkot, Gujarat",
+  "rating": 4.3,
+  "reviews": [
+    { "user": "Prachi Mehta", "comment": "Clean and budget-friendly.", "rating": 4.2 },
+    { "user": "Sahil Shah", "comment": "Good atmosphere for students.", "rating": 4.4 }
+  ],
+  "main_image": "../featuresimage/hotelsImage/hostel21.jpg",
+  "room_images": [
+    "../featuresimage/hotelsImage/hostel22.jpg",
+    "../featuresimage/hotelsImage/hostel23.jpg"
+  ],
+  "price_per_month": 4800,
+  "gender": "Both",
+  "facilities": ["Wi-Fi", "Parking", "Mess Facility", "Study Area"],
+  "description": "A vibrant hostel offering a comfortable stay for college students."
+},
+{
+  "id": 8,
+  "name": "Lotus PG",
+  "type": "PG",
+  "city": "Ahmedabad",
+  "address": "Prahladnagar, Ahmedabad, Gujarat",
+  "rating": 4.8,
+  "reviews": [
+    { "user": "Rahul Verma", "comment": "Excellent facilities and great management.", "rating": 4.9 },
+    { "user": "Karan Shah", "comment": "A peaceful place to live.", "rating": 4.7 }
+  ],
+  "main_image": "../featuresimage/hotelsImage/hostel24.jpg",
+  "room_images": [
+    "../featuresimage/hotelsImage/hostel25.jpg",
+    "../featuresimage/hotelsImage/hostel26.jpg"
+  ],
+  "price_per_month": 7000,
+  "gender": "Boys",
+  "facilities": ["Air Conditioning", "Gym", "Wi-Fi", "TV Lounge"],
+  "description": "A premium PG for working professionals and students with high-end amenities."
+},
+{
+  "id": 9,
+  "name": "Hilltop Hostel",
+  "type": "Hostel",
+  "city": "Surat",
+  "address": "Adajan, Surat, Gujarat",
+  "rating": 4.2,
+  "reviews": [
+    { "user": "Mansi Patel", "comment": "Affordable and well-maintained.", "rating": 4.3 },
+    { "user": "Meghna Tiwari", "comment": "Close to my college and secure.", "rating": 4.1 }
+  ],
+  "main_image": "../featuresimage/hotelsImage/hostel27.jpg",
+  "room_images": [
+    "../featuresimage/hotelsImage/hostel28.jpg",
+    "../featuresimage/hotelsImage/hostel29.jpg"
+  ],
+  "price_per_month": 5500,
+  "gender": "Girls",
+  "facilities": ["Wi-Fi", "Laundry", "Mess Facility", "Recreation Room"],
+  "description": "A student-friendly hostel with a focus on convenience and safety."
+},
+{
+  "id": 10,
+  "name": "Oasis PG",
+  "type": "PG",
+  "city": "Vadodara",
+  "address": "Manjalpur, Vadodara, Gujarat",
+  "rating": 4.0,
+  "reviews": [
+    { "user": "Kriti Desai", "comment": "Basic facilities but affordable.", "rating": 3.8 },
+    { "user": "Shruti Rao", "comment": "Comfortable stay with helpful staff.", "rating": 4.2 }
+  ],
+  "main_image": "../featuresimage/hotelsImage/hostel30.jpg",
+  "room_images": [
+    "../featuresimage/hotelsImage/hostel31.jpg",
+    "../featuresimage/hotelsImage/hostel32.jpg"
+  ],
+  "price_per_month": 4000,
+  "gender": "Girls",
+  "facilities": ["Shared Kitchen", "Wi-Fi", "Parking"],
+  "description": "A cozy and budget-friendly PG for professionals and students."
+},
+{
+  "id": 11,
+  "name": "Riverfront Hostel",
+  "type": "Hostel",
+  "city": "Ahmedabad",
+  "address": "Riverfront Road, Ahmedabad, Gujarat",
+  "rating": 4.6,
+  "reviews": [
+    { "user": "Anjali Gupta", "comment": "Amazing location and great facilities.", "rating": 4.7 },
+    { "user": "Mohit Jain", "comment": "Clean and well-maintained.", "rating": 4.5 }
+  ],
+  "main_image": "../featuresimage/hotelsImage/hostel33.jpg",
+  "room_images": [
+    "../featuresimage/hotelsImage/hostel34.jpg",
+    "../featuresimage/hotelsImage/hostel35.jpg"
+  ],
+  "price_per_month": 6200,
+  "gender": "Both",
+  "facilities": ["Wi-Fi", "Study Room", "Laundry", "Parking"],
+  "description": "A scenic hostel near the riverfront, ideal for students and professionals."
+},
+{
+ "id": 12,
+ "name": "Silver Oak PG",
+ "type": "PG",
+ "city": "Rajkot",
+ "address": "Race Course Road, Rajkot, Gujarat",
+ "rating": 4.2,
+ "reviews": [
+   { "user": "Parth Shah", "comment": "Peaceful environment, suitable for studying.", "rating": 4.5 },
+   { "user": "Mansi Patel", "comment": "The Wi-Fi could be better.", "rating": 4 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel36.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel37.jpg",
+   "../featuresimage/hotelsImage/hostel38.jpg"
+ ],
+ "price_per_month": 5500,
+ "gender": "Both",
+ "facilities": ["Wi-Fi", "Parking", "Mess Facility", "Housekeeping"],
+ "description": "A modern PG with spacious rooms and a focus on student convenience."
+},
+{
+ "id": 13,
+ "name": "The Nest Hostel",
+ "type": "Hostel",
+ "city": "Ahmedabad",
+ "address": "C.G. Road, Ahmedabad, Gujarat",
+ "rating": 4.6,
+ "reviews": [
+   { "user": "Anjali Verma", "comment": "Spacious rooms and good housekeeping.", "rating": 4.7 },
+   { "user": "Kunal Sharma", "comment": "Great value for the price.", "rating": 4.5 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel39.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel40.jpg",
+   "../featuresimage/hotelsImage/hostel41.jpg"
+ ],
+ "price_per_month": 6200,
+ "gender": "Both",
+ "facilities": ["Gym", "Wi-Fi", "Parking", "Recreation Room"],
+ "description": "A well-located hostel with top-class amenities for students and professionals."
+},
+{
+ "id": 14,
+ "name": "Harmony PG",
+ "type": "PG",
+ "city": "Surat",
+ "address": "Adajan Road, Surat, Gujarat",
+ "rating": 4.3,
+ "reviews": [
+   { "user": "Ramesh Gupta", "comment": "Very neat and peaceful.", "rating": 4.3 },
+   { "user": "Shivani Desai", "comment": "Affordable with great mess facilities.", "rating": 4.4 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel42.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel43.jpg",
+   "../featuresimage/hotelsImage/hostel44.jpg"
+ ],
+ "price_per_month": 6800,
+ "gender": "Both",
+ "facilities": ["Wi-Fi", "Air Conditioning", "Laundry", "Parking"],
+ "description": "Comfortable PG accommodation with essential amenities for professionals."
+},
+{
+ "id": 15,
+ "name": "Galaxy Boys Hostel",
+ "type": "Hostel",
+ "city": "Vadodara",
+ "address": "Sayajigunj, Vadodara, Gujarat",
+ "rating": 4.7,
+ "reviews": [
+   { "user": "Ishaan Patel", "comment": "Spacious rooms with a great study environment.", "rating": 4.8 },
+   { "user": "Arjun Roy", "comment": "Good mess and laundry service.", "rating": 4.7 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel45.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel46.jpg",
+   "../featuresimage/hotelsImage/hostel47.jpg"
+ ],
+ "price_per_month": 5400,
+ "gender": "Both",
+ "facilities": ["Study Desk", "Mess Facility", "24/7 Security", "Wi-Fi"],
+ "description": "A secure and student-friendly hostel with all basic amenities."
+},
+{
+ "id": 16,
+ "name": "Royal Stay PG",
+ "type": "PG",
+ "city": "Rajkot",
+ "address": "Airport Road, Rajkot, Gujarat",
+ "rating": 4.4,
+ "reviews": [
+   { "user": "Sonali Shah", "comment": "Comfortable stay and good facilities.", "rating": 4.5 },
+   { "user": "Meera Joshi", "comment": "Peaceful and clean.", "rating": 4.3 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel48.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel49.jpg",
+   "../featuresimage/hotelsImage/hostel50.jpg"
+ ],
+ "price_per_month": 5000,
+ "gender": "Girls",
+ "facilities": ["Wi-Fi", "Parking", "Housekeeping"],
+ "description": "A convenient PG for students and working professionals."
+},
+{
+ "id": 17,
+ "name": "Sunshine Hostel",
+ "type": "Hostel",
+ "city": "Surat",
+ "address": "Citylight Area, Surat, Gujarat",
+ "rating": 4.8,
+ "reviews": [
+   { "user": "Raj Singh", "comment": "Premium facilities and clean rooms.", "rating": 5 },
+   { "user": "Rohit Mehta", "comment": "A great hostel for students.", "rating": 4.7 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel51.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel52.jpg",
+   "../featuresimage/hotelsImage/hostel53.jpg"
+ ],
+ "price_per_month": 6500,
+ "gender": "Boys",
+ "facilities": ["Gym", "Wi-Fi", "Parking", "Mess Facility"],
+ "description": "Luxurious hostel with all modern amenities for students."
+},
+{
+ "id": 18,
+ "name": "Elite Comfort PG",
+ "type": "PG",
+ "city": "Ahmedabad",
+ "address": "Prahlad Nagar, Ahmedabad, Gujarat",
+ "rating": 4.6,
+ "reviews": [
+   { "user": "Daksh Kapoor", "comment": "Perfect for working women.", "rating": 4.7 },
+   { "user": "Rahul Makwana", "comment": "Feels like home with excellent service.", "rating": 4.5 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel54.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel55.jpg",
+   "../featuresimage/hotelsImage/hostel56.jpg"
+ ],
+ "price_per_month": 7500,
+ "gender": "Girls",
+ "facilities": ["Wi-Fi", "Laundry", "Parking", "Security"],
+ "description": "A safe and comfortable PG for working professionals."
+},
+{
+ "id": 19,
+ "name": "SkyView Hostel",
+ "type": "Hostel",
+ "city": "Vadodara",
+ "address": "Alkapuri, Vadodara, Gujarat",
+ "rating": 4.5,
+ "reviews": [
+   { "user": "Aakash Rana", "comment": "Excellent location and amenities.", "rating": 4.6 },
+   { "user": "Pranav Das", "comment": "Spacious and well-managed.", "rating": 4.5 }
+ ],
+ "main_image": "../featuresimage/hotelsImage/hostel57.jpg",
+ "room_images": [
+   "../featuresimage/hotelsImage/hostel58.jpg",
+   "../featuresimage/hotelsImage/hostel59.jpg"
+ ],
+ "price_per_month": 6200,
+ "gender": "Both",
+ "facilities": ["Wi-Fi", "Study Room", "Parking", "Mess Facility"],
+ "description": "A premium hostel for students and professionals."
+}
+]

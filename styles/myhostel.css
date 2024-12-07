@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
+
+:root{
+ --main_font_color : #FF5C02;
+ --fedrecka_font : "Fredoka", sans-serif;
+}
+
+body{
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+ background-color: #f9f9f9;
+ font-family: var(--fedrecka_font);
+}
+
+.navbar-hostel{
+ width: 100vw;
+ height: 8vh;
+ border-bottom: 2px solid #f6681c;
+ display: flex;
+ align-items: center;
+ padding-left: 20px;
+ box-sizing: border-box;
+ gap: 650px;
+}
+
+.navbar-hostel a{
+ width: 70px;
+ height: 30px;
+ background-color: #f6681c;
+ color: white;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 12px;
+ border: 2px solid white;
+}
+
+.navbar-hostel a:hover{
+ opacity: 0.8;
+}
+
+.navbar-hostel h1{
+ color: #f6681c;
+}
+
+#bookingsContainer{
+ width: 98%;
+ height: 88vh;
+ margin: 0 auto;
+ /* border: 1px solid black; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+ padding: 10px 0;
+ overflow-y: scroll;
+}
+
+#bookingsContainer::-webkit-scrollbar{
+ appearance: none;
+}
+
+#bookingsContainer::-webkit-scrollbar-thumb{
+ background-color: #f6681c;
+}
+
+
+.booking-item{
+ background-color: #fff;
+ width: 95%;
+ border-radius: 12px;
+ border: 2px solid #f6681c;
+ padding: 4px 10px;
+ box-sizing: border-box;
+ display: flex;
+ align-items: center;
+ gap: 30px;
+ overflow: hidden;
+ position: relative;
+ color: #f6681c;
+}
+
+.hostelDetailsBook{
+ /* border: 1px solid black; */
+ width: 45%;
+ height: 95%;
+}
+
+.hostelDetailsBook h3{
+ text-decoration: underline;
+}
+
+.bookingDetails{
+ /* border: 1px solid black; */
+ width: 45%;
+ height: 95%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ justify-content: center;
+}
+
+.deleteBookingBtn{
+ height:110%;
+ width: 100px;
+ background-color: lightcoral;
+ color: white;
+ font-family: var(--fedrecka_font);
+ cursor: pointer;
+ font-size: larger;
+ position: absolute;
+ right: 0;
+ border: none;
+}
+
+.deleteBookingBtn:hover{
+ background-color: rgb(232, 98, 98);
+}

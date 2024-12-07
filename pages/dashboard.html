@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Hostel</title>
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <script src="https://kit.fontawesome.com/2ae1fdcc9d.js" crossorigin="anonymous"></script>
+  <style>
+    .mainContainer-dashboard h3 {
+      color: #f6681c;
+      font-family: "Courier New", Courier; 
+      border-right: 2px solid #FF5C02; /* Typing cursor effect */
+      display: inline-block; /* Aligns animation to the text */
+      overflow: hidden; /* Hides extra text */
+      white-space: nowrap; /* Prevents text wrapping */
+      width: 0; /* Start with 0 width for typing animation */
+    }
+
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: var(--text-length); /* Dynamically adjust to text length */
+      }
+      100% {
+        width: 0; /* Reset width for infinite typing */
+      }
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: transparent; /* Make the cursor disappear */
+      }
+    }
+
+    .mainContainer-dashboard h3 {
+      animation: typing 6s steps(var(--step-count), end) infinite, 
+      blink 0.5s step-end infinite;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../featuresimage/findmyhostellogo.png" alt="logo">
+    </div>
+
+    <div class="pages">
+      <ul>
+        <li class="pageName"><a href="">Dashboard</a></li>
+        <li class="pageName"><a href="./myhostels.html">My Hostel</a></li>
+        <li class="pageName"><a href="">Profile</a></li>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <a href="./loginpage.html" class="loginPageBtn">Login</a>
+      <button class="loginPageBtn" onclick="handleLogout()">
+        <i class="fa-solid fa-arrow-right-from-bracket fa-xl" style="color:#f6681c"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mainContainer-dashboard">
+   <h3 id="username"></h3>
+
+   <div class="searchBar">
+    <div class="address" id="addressValue">
+
+    </div>
+    <div class="searchBox">
+     <input type="text" id="searchValue">
+     <div class="searchIcon" onmouseover="changeStyle(this, '#c24b07')" onmouseout="changeStyle(this, '#FF5C02')">
+       <i class="fa-solid fa-magnifying-glass"></i>
+     </div>
+    </div>
+    <select name="cities" id="cityList">
+     <option value="">Select a City</option>
+    </select>
+
+    <div class="priceBox">
+     <div id="rangeValue" style="color: #f6681c; margin-top: 8px;"><i class="fa-solid fa-spinner fa-spin-pulse"  style="color: #f6681c;""></i></div>
+     <div class="priceInputSection">
+      <label for="priceRange" style="color: #f6681c;">Select Price :</label><input type="range" name="priceRange" id="priceRange" min="0" max="100" step="1" value="50">
+     </div>
+    </div>
+
+   </div>
+
+   <div class="results-container" id="resultsContainer">
+    <center><i class="fa-solid fa-spinner fa-spin-pulse"  style="color: #fff;"></i></center>
+   </div>
+
+   <div id="checkoutSection" style="display: none;position: absolute;bottom: 30px;">
+    <button onclick="closeCheckout()" class="closeBtn"><i class="fa-solid fa-x" style="color: #fff;"></i></button>
+    <div id="checkoutDetails"></div>
+    <div id="dateInputs">
+     <label for="fromDate">From : </label><input type="date" name="fromDate" id="fromDate" onchange="alert(this.value)">
+     <label for="toDate">To : </label><input type="date" name="toDate" id="toDate">
+    </div>
+    <button id="confirmBooking">Book</button>
+   </div>
+
+  </div>
+
+  <script src="../statics/dashboard.js" bable></script>
+</body>
+</html>

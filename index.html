@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Find My Hostel</title>
+ <link rel="stylesheet" href="./styles/style.css">
+ <script src="https://kit.fontawesome.com/2ae1fdcc9d.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+ 
+</head>
+<body>
+ <nav>
+  <div class="logo">
+   <img src="./featuresimage/findmyhostellogo.png" alt="logo">
+  </div>
+
+  <div class="pages">
+   <ul class="pageList">
+    <li class="pageName"><a href="#features" style="color: inherit;text-decoration: none;">Features</a></li>
+    <li class="pageName"><a href="#pricing" style="color: inherit;text-decoration: none;">Pricing</a></li>
+    <li class="pageName"><a href="#faqs" style="color: inherit;text-decoration: none;">FAQs</a></li>
+    <li class="pageName"><a href="#contact" style="color: inherit;text-decoration: none;">Contact</a></li>
+   </ul>
+  </div>
+
+  <div class="actions">
+   <a href="./pages/registerpage.html" id="getstart">Get Started</a>
+   <a href="./pages/dashboard.html" id="dashboard">Go to Dashboard</a>
+  </div>
+ </nav>
+
+ <div class="mainContainer">
+
+  <div class="headingContainer">
+   <div class="headingContent">
+    <h1>Find Your Perfect Student Home in Minutes, Not Weeks</h1>
+    <p>
+      Join thousands of students who've found their ideal hostel through our
+      smart booking platform. Virtual tours, instant availability, and secure
+      booking - all in one place.
+    </p>
+    <a href="./pages/registerpage.html" class="searchBtn1">Start Your Search</a>
+    <div class="social-rating">
+      <div class="avatars">
+        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="User" />
+        <img src="https://randomuser.me/api/portraits/women/9.jpg" alt="User" />
+        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="User" />
+        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="User" />
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="User" />
+      </div>
+      <span>1000+ happy students housed</span>
+    </div>
+   </div>
+
+   <div class="headingImageContent1">
+
+    <svg id="svg1" width="500" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+       <clipPath id="clip1">
+         <path fill="none" d="M44.3,-53.9C57.7,-41.5,69,-27.9,75.7,-10.3C82.3,7.2,84.3,28.5,74.6,41C64.9,53.6,43.6,57.4,25.3,59.7C7.1,62.1,-8.1,63,-25.2,60.5C-42.2,58.1,-61.1,52.1,-68.9,39.4C-76.7,26.7,-73.4,7.2,-68.4,-10.4C-63.3,-28,-56.5,-43.6,-44.9,-56.3C-33.2,-69,-16.6,-78.7,-0.6,-78.1C15.5,-77.4,30.9,-66.3,44.3,-53.9Z" transform="translate(100 100)" />
+       </clipPath>
+     </defs>
+   
+     <!-- White fill for the clipPath area -->
+     <path fill="white" d="M44.3,-53.9C57.7,-41.5,69,-27.9,75.7,-10.3C82.3,7.2,84.3,28.5,74.6,41C64.9,53.6,43.6,57.4,25.3,59.7C7.1,62.1,-8.1,63,-25.2,60.5C-42.2,58.1,-61.1,52.1,-68.9,39.4C-76.7,26.7,-73.4,7.2,-68.4,-10.4C-63.3,-28,-56.5,-43.6,-44.9,-56.3C-33.2,-69,-16.6,-78.7,-0.6,-78.1C15.5,-77.4,30.9,-66.3,44.3,-53.9Z" transform="translate(100 100)" />
+   
+     <!-- Clipped image -->
+     <image id="svgImage1" href="./featuresimage/Youth hostel, modern room, bunk.jpeg" width="100%" height="100%" clip-path="url(#clip1)" />
+   
+     <!-- Border around the clipped area -->
+     <path fill="none" stroke="#FF5C02" stroke-width="2" d="M44.3,-53.9C57.7,-41.5,69,-27.9,75.7,-10.3C82.3,7.2,84.3,28.5,74.6,41C64.9,53.6,43.6,57.4,25.3,59.7C7.1,62.1,-8.1,63,-25.2,60.5C-42.2,58.1,-61.1,52.1,-68.9,39.4C-76.7,26.7,-73.4,7.2,-68.4,-10.4C-63.3,-28,-56.5,-43.6,-44.9,-56.3C-33.2,-69,-16.6,-78.7,-0.6,-78.1C15.5,-77.4,30.9,-66.3,44.3,-53.9Z" transform="translate(100 100)" />
+   </svg>
+   
+
+   <svg id="svg2" width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="white" stroke-width="2" fill="#FC9A66FF" d="M33.4,3.7C33.4,25.4,16.7,50.8,-2.9,50.8C-22.6,50.8,-45.2,25.4,-45.2,3.7C-45.2,-18.1,-22.6,-36.1,-2.9,-36.1C16.7,-36.1,33.4,-18.1,33.4,3.7Z" transform="translate(100 100)" />
+   </svg>
+
+   <svg id="svg3" width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="white" stroke-width="1" fill="#FC9A66FF" d="M57.5,-45.5C73.6,-25.7,85.1,-1.8,80.6,18.6C76.1,39.1,55.7,56.2,33.4,65.5C11,74.8,-13.3,76.4,-31.8,67C-50.3,57.7,-63.1,37.5,-69.7,14.3C-76.3,-8.9,-76.6,-35.1,-64,-54.2C-51.3,-73.2,-25.7,-85.1,-2.5,-83.1C20.7,-81.2,41.5,-65.4,57.5,-45.5Z" transform="translate(100 100)" />
+   </svg>
+   </div>
+  </div>
+
+  <div class="pain-points">
+   <h2>
+     57% of students spend weeks finding accommodation, impacting their
+     studies and mental health
+   </h2>
+   <ul>
+     <li><div class="icon">😫</div> Endless physical viewings eating up your time</li>
+     <li><div class="icon">😰</div> Uncertainty about neighborhood safety and location</li>
+     <li><div class="icon">😤</div> Frustrating paperwork and booking processes</li>
+   </ul>
+  </div>
+
+  <div class="how-it-works">
+
+   <div class="workingImage">
+    <img src="./featuresimage/Premium Vector _ Characters hostel accommodation concept illustration.jpeg" alt="hostelImage">
+   </div>
+
+   <div class="workingSteps">
+    <h2>Your Dream Room in 4 Simple Steps</h2>
+    <ol>
+      <li>
+        <h3>Search & Filter</h3>
+        <p>Enter your preferences and browse matching hostels in your desired location</p>
+      </li>
+      <li>
+        <h3>Virtual Tour</h3>
+        <p>Take 360° tours of rooms and facilities from your device</p>
+      </li>
+      <li>
+        <h3>Compare & Choose</h3>
+        <p>Review amenities, prices, and authentic student reviews</p>
+      </li>
+      <li>
+        <h3>Instant Booking</h3>
+        <p>Secure your room instantly with our safe booking system</p>
+      </li>
+    </ol>
+   </div>
+
+  </div>
+
+  <div class="heroImage1">
+   <img src="./featuresimage/Hostel or student dormitory room.jpeg" alt="heroImage">
+  </div>
+
+  <div id="features">
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Woman in VR glasses.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Virtual Tours & Real-Time Availability</h3>
+         <div class="descContent">
+            Browse detailed room layouts and check instant availability without leaving your couch
+         </div>
+      </div>
+   </div>
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Search Filters_ 5 best practices for a great UX _ Algolia.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Smart Search Filters</h3>
+         <div class="descContent">
+            Find your perfect match with filters for budget, location, amenities, and more
+         </div>
+      </div>
+   </div>
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Premium Vector _ Product review Social media review online rating service content marketing tools customer feedback.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Verified Reviews</h3>
+         <div class="descContent">
+            Read authentic experiences from real students who've lived there
+         </div>
+      </div>
+   </div>
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Neighbourhood I.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Neighborhood Safety Insights</h3>
+         <div class="descContent">
+            Make informed decisions with detailed safety scores and local area information
+         </div>
+      </div>
+   </div>
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Unini.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Instant Booking</h3>
+         <div class="descContent">
+            Secure your room in minutes with our streamlined booking process
+         </div>
+      </div>
+   </div>
+   <div class="featureTile">
+      <div class="featImageContent">
+         <img src="./featuresimage/Free Vector _ Happy woman chatting with friends online.jpeg" alt="featimage">
+      </div>
+      <div class="featDesc">
+         <h3>Community Features</h3>
+         <div class="descContent">
+            Connect with potential roommates and join hostel communities before moving in
+         </div>
+      </div>
+   </div>
+  </div>
+
+  <div id="pricing">
+   <div class="package">
+    <h3 class="title">Basic Search</h3>
+    <div class="priceDesc">Perfect for students starting their search</div>
+
+    <div class="benefits">
+     <div class="priceDura">
+      <div class="priceTime"><b>Monthly</b> :  $ 0</div>
+      <div class="priceTime"><b>Yearly</b> :  $ 0</div>
+     </div>
+     <ul>
+      <li>Basic hostel listings</li>
+      <li>Simple search filters</li>
+      <li>Email support</li>
+     </ul>
+    </div>
+   </div>
+   <div class="package">
+    <div class="tag">Best Choice</div>
+    <h3 class="title">Premium Finder</h3>
+    <div class="priceDesc">Most popular for serious room hunters</div>
+
+    <div class="benefits">
+     <div class="priceDura">
+      <div class="priceTime"><b>Monthly</b> : $ 9.99</div>
+      <div class="priceTime"><b>Yearly</b> : $ 99</div>
+     </div>
+     <ul>
+      <li>Virtual tours</li>
+      <li>Advanced filters</li>
+      <li>Priority booking</li>
+      <li>24/7 support</li>
+     </ul>
+    </div>
+   </div>
+   <div class="package">
+    <h3 class="title">Ultimate Package</h3>
+    <div class="priceDesc">Complete peace of mind for international students</div>
+
+    <div class="benefits">
+     <div class="priceDura">
+      <div class="priceTime"><b>Monthly</b> : $ 19.99</div>
+      <div class="priceTime"><b>Yearly</b> : $ 199</div>
+     </div>
+     <ul>
+      <li>All Premium features</li>
+      <li>Guaranteed placement</li>
+      <li>Personal room advisor</li>
+      <li>Moving assistance</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+
+  <div class="testimonials">
+   <h2>Our Happy Customers</h2>
+   <div class="people">
+    <div class="userImage">
+     <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="user">
+    </div>
+    <div class="peopleDetail">
+     <div class="name"><b>Sarah Chen</b></div>
+     <div class="designation"><small>- International Student</small></div>
+    </div>
+    <div class="reviewContent">"Found my dream hostel in just 2 days! The virtual tours saved me from having to fly in early just to view rooms."</div>
+   </div>
+   <div class="people">
+    <div class="userImage">
+     <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="user">
+    </div>
+    <div class="peopleDetail">
+     <div class="name"><b>James Wilson</b></div>
+     <div class="designation"><small>- Graduate Student</small></div>
+    </div>
+    <div class="reviewContent">"The neighborhood safety insights helped me choose a secure location close to campus. Absolute game-changer!"</div>
+   </div>
+   <div class="people">
+    <div class="userImage">
+     <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="user">
+    </div>
+    <div class="peopleDetail">
+     <div class="name"><b>Maria Garcia</b></div>
+     <div class="designation"><small>- Undergraduate Student</small></div>
+    </div>
+    <div class="reviewContent">"Booked my room in 10 minutes flat. No paperwork hassle, no stress - just simple and efficient."</div>
+   </div>
+   <div class="people">
+    <div class="userImage">
+     <img src="https://randomuser.me/api/portraits/men/28.jpg" alt="user">
+    </div>
+    <div class="peopleDetail">
+     <div class="name"><b>Max Brayn</b></div>
+     <div class="designation"><small>- Undergraduate Student</small></div>
+    </div>
+    <div class="reviewContent">"Very fast and easy process , I could focus on study behalf of worrying about finding room."</div>
+   </div>
+  </div>
+
+  <div id="faqs">
+   <div class="faqDesign">
+    <svg id="faqsvg" width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     <path stroke="#FF5C02" stroke-width="1" fill="#f6681c" d="M39.5,-55.7C53.5,-44.2,68.8,-35.8,74.5,-23C80.3,-10.3,76.5,6.7,72.1,24.3C67.6,41.9,62.3,60.2,50.2,70.1C38,79.9,19,81.3,0.2,81C-18.6,80.7,-37.2,78.8,-47.6,68.4C-58,58,-60.1,39.1,-62,22.7C-63.8,6.2,-65.4,-7.8,-62.1,-20.9C-58.8,-33.9,-50.5,-46.1,-39.4,-58.4C-28.2,-70.7,-14.1,-83.3,-0.7,-82.4C12.8,-81.5,25.5,-67.1,39.5,-55.7Z" transform="translate(100 100)" />
+     <text x="100" y="105" font-size="20" font-weight="bold" text-anchor="middle" fill="white" font-family="Fredoka">
+      FAQs
+     </text>
+    </svg>
+    <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     <path stroke="#fff" stroke-width="1" fill="#FB8F55FF" d="M43.3,-66.4C57.9,-58.1,72.6,-49,79.1,-35.8C85.6,-22.7,83.8,-5.4,78.3,9C72.7,23.5,63.5,35.2,54.4,48.8C45.3,62.4,36.3,77.9,23.6,82.7C10.8,87.6,-5.8,81.9,-22.2,76.6C-38.6,71.3,-54.9,66.5,-61.5,55.3C-68.1,44.1,-65.1,26.5,-68.3,9.4C-71.4,-7.7,-80.6,-24.4,-79.2,-39.8C-77.8,-55.2,-65.7,-69.4,-50.8,-77.5C-35.8,-85.6,-17.9,-87.7,-1.8,-84.9C14.4,-82.2,28.8,-74.7,43.3,-66.4Z" transform="translate(100 100)" />
+    </svg>
+    <svg stroke="#fff" stroke-width="2" id="faqsvg1" width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     <path fill="#FB8F55FF" d="M52.2,-43.8C64,-26.8,67.4,-5.3,63.9,16.4C60.4,38.2,50,60.3,32.5,69.4C15,78.6,-9.6,74.9,-31.9,64.7C-54.2,54.6,-74.2,38,-77.8,18.8C-81.3,-0.4,-68.4,-22.3,-52.7,-40.1C-36.9,-57.9,-18.5,-71.7,0.9,-72.4C20.2,-73.1,40.4,-60.7,52.2,-43.8Z" transform="translate(100 100)" />
+   </svg>
+   </div>
+   <div class="qaContent">
+    <div class="qaBox">
+     <div class="question">
+      How far in advance should I book my hostel room?
+      <i class="fa-solid fa-caret-down fa-bounce" style="color: white;"></i>
+     </div>
+     <div class="answer">
+      We recommend booking 3-6 months before your intended move-in date, especially for popular student areas. However, our platform shows real-time availability, so you can book whenever you find the right place.
+     </div>
+    </div>
+    <div class="qaBox">
+     <div class="question">
+      Are the virtual tours accurate representations?
+      <i class="fa-solid fa-caret-down fa-bounce" style="color: white;"></i>
+     </div>
+     <div class="answer">
+      Yes! Our virtual tours are regularly updated and provide 360° views of actual rooms and common areas. What you see is what you get.
+     </div>
+    </div>
+    <div class="qaBox">
+     <div class="question">
+      Can I cancel my booking if my plans change?
+      <i class="fa-solid fa-caret-down fa-bounce" style="color: white;"></i>
+     </div>
+     <div class="answer">
+      Cancellation policies vary by hostel, but most offer full refunds up to 30 days before move-in. Check individual listings for specific policies.
+     </div>
+    </div>
+    <div class="qaBox">
+     <div class="question">
+      How do I verify the safety of a neighborhood?
+      <i class="fa-solid fa-caret-down fa-bounce" style="color: white;"></i>
+     </div>
+     <div class="answer">
+      Our safety insights include crime statistics, student feedback, and proximity to emergency services. We update this data monthly to ensure accuracy.
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div id="contact">
+   <div class="leftPart">
+
+    <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+     <path stroke="#FF5C02" stroke-width="2" fill="#FB8F55FF" d="M61.3,-58.7C77.4,-45.2,87.1,-22.6,84.8,-2.3C82.5,18,68.2,36,52.1,51.9C36,67.7,18,81.4,-1.1,82.5C-20.2,83.7,-40.5,72.2,-55.2,56.3C-70,40.5,-79.2,20.2,-79.5,-0.3C-79.7,-20.8,-71,-41.6,-56.3,-55C-41.6,-68.5,-20.8,-74.7,0.9,-75.6C22.6,-76.5,45.2,-72.2,61.3,-58.7Z" transform="translate(100 100)" />
+     <path fill="white" d="M61.3,-58.7C77.4,-45.2,87.1,-22.6,84.8,-2.3C82.5,18,68.2,36,52.1,51.9C36,67.7,18,81.4,-1.1,82.5C-20.2,83.7,-40.5,72.2,-55.2,56.3C-70,40.5,-79.2,20.2,-79.5,-0.3C-79.7,-20.8,-71,-41.6,-56.3,-55C-41.6,-68.5,-20.8,-74.7,0.9,-75.6C22.6,-76.5,45.2,-72.2,61.3,-58.7Z" transform="translate(100 100)" />
+    </svg>
+
+    <div class="contactImgContent">
+     <img src="./featuresimage/Roommates, friends.jpeg" alt="contactImage">
+    </div>
+
+    <div class="contactDetails">
+     <div class="contactContent">
+      <i class="fa-brands fa-instagram fa-2xl"></i>
+      <small>@findmyhostel</small>
+     </div>
+     <div class="contactContent">
+      <i class="fa-regular fa-envelope fa-2xl"></i>
+      <small>findmyhostel22@gmail.com</small>
+     </div>
+     <div class="contactContent">
+      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+      <small>+91 77888 88777</small>
+     </div>
+    </div>
+   </div>
+   <div class="rightPart">
+    <div id="map"></div>
+    <div class="form">
+     <h4>Get More Details by Sending Mail & Mobile</h4>
+     <div class="inputBox">
+      <input class="email" type="text" placeholder="Enter your email">
+      <input class="message" type="text" placeholder="Enter your mobile">
+     </div>
+     <button>submit</button>
+    </div>
+   </div>
+   <svg id="contactSvg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f6681c" fill-opacity="1" d="M0,160L34.3,154.7C68.6,149,137,139,206,122.7C274.3,107,343,85,411,90.7C480,96,549,128,617,133.3C685.7,139,754,117,823,106.7C891.4,96,960,96,1029,117.3C1097.1,139,1166,181,1234,176C1302.9,171,1371,117,1406,90.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+   </svg>
+  </div>
+ </div>
+
+ <script src="./statics/script.js" bable></script>
+
+</body>
+</html>

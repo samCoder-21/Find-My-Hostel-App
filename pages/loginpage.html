@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login</title>
+ <link rel="stylesheet" href="../styles/loginpage.css">
+ <script>
+   function handleLogin(event) {
+     event.preventDefault();
+
+     const usernameInput = document.loginForm.username.value.trim();
+     const passwordInput = document.loginForm.password.value.trim();
+
+     if (!usernameInput || !passwordInput) {
+       alert("Both fields are required!");
+       return false;
+     }
+
+     const userData = localStorage.getItem('username');
+     if (!userData) {
+       alert("No registered user found. Please register first.");
+       window.location.href = "./registerpage.html";
+       return false;
+     }
+
+     const { username, password, status } = JSON.parse(userData);
+
+     if (usernameInput === username && passwordInput === password) {
+       // Update the user's status to logged in
+       const updatedUserData = { username, password, status: "loggedIn" };
+       localStorage.setItem('username', JSON.stringify(updatedUserData));
+
+       alert("Login successful!");
+       window.location.href = "./dashboard.html";
+     } else {
+       alert("Invalid username or password.");
+     }
+   }
+ </script>
+</head>
+<body>
+ <h1>Login</h1>
+ <form id="loginForm" name="loginForm" onsubmit="handleLogin(event)">
+  <input type="text" name="username" placeholder="Enter Username">
+  <input type="password" name="password" placeholder="Enter Password">
+  <button class="loginBtn" type="submit">Login</button>
+  <svg width="100%" id="waveRegister" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF5C02" fill-opacity="1" d="M0,160L48,133.3C96,107,192,53,288,26.7C384,0,480,0,576,26.7C672,53,768,107,864,117.3C960,128,1056,96,1152,117.3C1248,139,1344,213,1392,250.7L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+  <svg id="waveRegister1" width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF5C02" fill-opacity="1" d="M0,160L48,133.3C96,107,192,53,288,26.7C384,0,480,0,576,26.7C672,53,768,107,864,117.3C960,128,1056,96,1152,117.3C1248,139,1344,213,1392,250.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+ </form>
+
+ <div class="optionRegister">
+  if you are not registered ? <a href="./registerpage.html">Register</a>
+ </div>
+</body>
+</html>

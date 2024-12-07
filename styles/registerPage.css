@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
+
+:root{
+ --main_font_color : #FF5C02;
+ --fedrecka_font : "Fredoka", sans-serif;
+ --light_color : #FB8F55FF ;
+}
+
+body{
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--fedrecka_font);
+ background-color: #ECEBEE;
+}
+
+body h1{
+ color: #FF5C02;
+}
+
+#registerForm{
+ width: 35%;
+ height: 60%;
+ border: 3px solid white;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-top: 120px;
+ gap: 25px;
+ background-color: var(--light_color);
+ position: relative;
+ border-radius: 16px;
+ overflow: hidden;
+}
+
+#registerForm input{
+ width: 60%;
+ height: 25px;
+ border: 2px solid black;
+ border-radius: 8px;
+ font-family: var(--fedrecka_font);
+ padding-left: 8px;
+}
+
+#waveRegister{
+ position: absolute;
+ bottom: 0;
+ z-index: 0;
+ /* border: 1px solid black; */
+}
+
+#waveRegister1{
+ position: absolute;
+ top: 0;
+ z-index: 1;
+}
+
+.submitBtn{
+ position: absolute;
+ right: -60px;
+ bottom: 120px;
+ width: 100px;
+ height: 30px;
+ margin-right: 85px;
+ font-family: var(--fedrecka_font);
+ font-weight: 600;
+ background-color: #f6681c;
+ color: white;
+ border-radius: 12px;
+ border: 2px solid white;
+ cursor: pointer;
+}
+
+.submitBtn:hover{
+ opacity: 0.8;
+}
